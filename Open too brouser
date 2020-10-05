@@ -1,0 +1,234 @@
+<form>
+  <input type="text" name="operation"/>
+  <input type="submit" name="submit" />
+</form>
+<?php
+
+  echo " Four operations are available to you on four pairs variables<br>";
+  echo "<br>Operations you make use *,+,-,/<br>";
+  echo "YOU MAKE SAW VARIABLES FOR THIS YOU MUST SEE TOO DOWN";
+
+  $one = array("1","4");
+  $two = array("6","45");
+  $tree = array("-74","22");
+  $four = array("-5","12");
+  
+  echo "<ol>";
+  echo "<li>$one[0] $one[1]</li>";
+  echo "<li>$two[0] $two[1]</li>";
+  echo "<li>$tree[0] $tree[1]</li>";
+  echo "<li>$four[0] $four[1]</li>";
+  echo "</ol>";
+  
+  error_reporting(0);
+  $operation = $_REQUEST[operation];
+  if($operation == "+"){
+    $sum1 = $one[0] + $one[1];
+    echo "1+4=$sum1 <br>";
+    $sum2 = $two[0] + $two[1];
+    echo "6+45=$sum2 <br>";
+    $sum3 = $tree[0] + $tree[1];
+    echo "-74+22=$sum3 <br>";
+    $sum4 = $four[0] + $four[1];
+    echo "-5+12=$sum4 <br>";
+    
+    if($sum1 < 0){
+      $record=fopen("varnegative.txt","a");
+      fwrite($record,$sum1);
+      fclose($record);
+    }
+    if($sum2 < 0){
+      $record=fopen("varnegative.txt","a");
+      fwrite($record,$sum2);
+      fclose($record);
+    }
+    if($sum3 < 0){
+      $record=fopen("varnegative.txt","a");
+      fwrite($record,$sum3);
+      fclose($record);
+    }
+    if($sum4 < 0){
+      $record=fopen("varnegative.txt","a");
+      fwrite($record,$sum);
+      fclose($record);
+    }
+    if($sum1 > 0){
+      $record=fopen("varpositive.txt","a");
+      fwrite($record,$sum1);
+      fclose($record);
+    }
+    if($sum2 > 0){
+      $record=fopen("varpositive.txt","a");
+      fwrite($record,$sum2);
+      fclose($record);
+    }
+    if($sum3 > 0){
+      $record=fopen("varpositive.txt","a");
+      fwrite($record,$sum3);
+      fclose($record);
+    }
+    if($sum4 > 0){
+      $record=fopen("varpositive.txt","a");
+      fwrite($record,$sum4);
+      fclose($record);
+    }
+  }
+  
+    if($operation == "-"){
+    $sum1 = $one[0] - $one[1];
+    echo "1-4=$sum1 <br>";
+    $sum2 = $two[0] - $two[1];
+    echo "6-45=$sum2 <br>";
+    $sum3 = $tree[0] - $tree[1];
+    echo "-74-22=$sum3 <br>";
+    $sum4 = $four[0] - $four[1];
+    echo "-5-12=$sum4 <br>";
+    
+    if($sum1 < 0){
+      $record=fopen("varnegative.txt","a");
+      fwrite($record,$sum1);
+      fclose($record);
+    }
+    if($sum2 < 0){
+      $record=fopen("varnegative.txt","a");
+      fwrite($record,$sum2);
+      fclose($record);
+    }
+    if($sum3 < 0){
+      $record=fopen("varnegative.txt","a");
+      fwrite($record,$sum3);
+      fclose($record);
+    }
+    if($sum4 < 0){
+      $record=fopen("varnegative.txt","a");
+      fwrite($record,$sum);
+      fclose($record);
+    }
+    if($sum1 > 0){
+      $record=fopen("varpositive.txt","a");
+      fwrite($record,$sum1);
+      fclose($record);
+    }
+    if($sum2 > 0){
+      $record=fopen("varpositive.txt","a");
+      fwrite($record,$sum2);
+      fclose($record);
+    }
+    if($sum3 > 0){
+      $record=fopen("varpositive.txt","a");
+      fwrite($record,$sum3);
+      fclose($record);
+    }
+    if($sum4 > 0){
+      $record=fopen("varpositive.txt","a");
+      fwrite($record,$sum4);
+      fclose($record);
+    }
+  }
+
+    if($operation == "*"){
+    $sum1 = $one[0] * $one[1];
+    echo "1*4=$sum1 <br>";
+    $sum2 = $two[0] * $two[1];
+    echo "6*45=$sum2 <br>";
+    $sum3 = $tree[0] * $tree[1];
+    echo "-74*22=$sum3 <br>";
+    $sum4 = $four[0] * $four[1];
+    echo "-5*12=$sum4 <br>";
+    
+    if($sum1 < 0){
+      $record=fopen("varnegative.txt","a");
+      fwrite($record,$sum1);
+      fclose($record);
+    }
+    if($sum2 < 0){
+      $record=fopen("varnegative.txt","a");
+      fwrite($record,$sum2);
+      fclose($record);
+    }
+    if($sum3 < 0){
+      $record=fopen("varnegative.txt","a");
+      fwrite($record,$sum3);
+      fclose($record);
+    }
+    if($sum4 < 0){
+      $record=fopen("varnegative.txt","a");
+      fwrite($record,$sum);
+      fclose($record);
+    }
+    if($sum1 > 0){
+      $record=fopen("varpositive.txt","a");
+      fwrite($record,$sum1);
+      fclose($record);
+    }
+    if($sum2 > 0){
+      $record=fopen("varpositive.txt","a");
+      fwrite($record,$sum2);
+      fclose($record);
+    }
+    if($sum3 > 0){
+      $record=fopen("varpositive.txt","a");
+      fwrite($record,$sum3);
+      fclose($record);
+    }
+    if($sum4 > 0){
+      $record=fopen("varpositive.txt","a");
+      fwrite($record,$sum4);
+      fclose($record);
+    }
+  }
+    if($operation == "/"){
+    $sum1 = $one[0] / $one[1];
+    echo "1/4=$sum1 <br>";
+    $sum2 = $two[0] / $two[1];
+    echo "6/45=$sum2 <br>";
+    $sum3 = $tree[0] / $tree[1];
+    echo "-74/22=$sum3 <br>";
+    $sum4 = $four[0] / $four[1];
+    echo "-5/12=$sum4 <br>";
+    
+    if($sum1 < 0){
+      $record=fopen("varnegative.txt","a");
+      fwrite($record,$sum1);
+      fclose($record);
+    }
+    if($sum2 < 0){
+      $record=fopen("varnegative.txt","a");
+      fwrite($record,$sum2);
+      fclose($record);
+    }
+    if($sum3 < 0){
+      $record=fopen("varnegative.txt","a");
+      fwrite($record,$sum3);
+      fclose($record);
+    }
+    if($sum4 < 0){
+      $record=fopen("varnegative.txt","a");
+      fwrite($record,$sum);
+      fclose($record);
+    }
+    if($sum1 > 0){
+      $record=fopen("varpositive.txt","a");
+      fwrite($record,$sum1);
+      fclose($record);
+    }
+    if($sum2 > 0){
+      $record=fopen("varpositive.txt","a");
+      fwrite($record,$sum2);
+      fclose($record);
+    }
+    if($sum3 > 0){
+      $record=fopen("varpositive.txt","a");
+      fwrite($record,$sum3);
+      fclose($record);
+    }
+    if($sum4 > 0){
+      $record=fopen("varpositive.txt","a");
+      fwrite($record,$sum4);
+      fclose($record);
+    }
+    
+  }
+  
+  
+?>
